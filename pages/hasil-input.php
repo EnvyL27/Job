@@ -10,19 +10,11 @@
 <div id="label-page"><h3>Input Data Pasien</h3></div>
 <div id="content">
 	<form action="proses/hasil-input-proses.php" method="post" enctype="multipart/form-data">
-		<br>
-		<?php
-		echo "Nama Pasien: ".$r_tampil_anggota['nm_pasien'];
-		?>
-		<br>
-		<?php
-		echo "ID Pasien: ".$r_tampil_anggota['id_pasien'];
-		?>
 	
 	<table id="tabel-input">
 		<tr>
 			<td class="label-formulir">ID Pasien</td>
-			<td class="isian-formulir"><input type="text" name="id_pasien" class="isian-formulir isian-formulir-border"  required></td>
+			<td class="isian-formulir"><input type="text" name="id_pasien" class="isian-formulir isian-formulir-border" value="<?php echo $id_anggota;?>"required></td>
 		</tr>
 		<tr>
 			<td class="label-formulir">Tanggal </td>
