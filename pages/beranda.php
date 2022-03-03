@@ -3,7 +3,4 @@
 	<div id="beranda-judul">
 		<h1>SELAMAT DATANG DI KLINIK Dr. Arif Junaedi</h1>
 	</div>
-	<!-- <div id="beranda-konten">
-		<h2> "MEMBACA ADALAH JENDELA DUNIA" </h2>
-	</div> -->
 </div>

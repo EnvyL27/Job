@@ -25,12 +25,20 @@
 			<td class="isian-formulir"><textarea rows="2" cols="40" name="keluhan" class="isian-formulir isian-formulir-border" required></textarea></td>
 		</tr>
 		<tr>
+			<td class="label-formulir">Hasil Pemeriksaan</td>
+			<td class="isian-formulir"><textarea rows="2" cols="40" name="hasil" class="isian-formulir isian-formulir-border" required></textarea></td>
+		</tr>
+		<tr>
         <td class="label-formulir">Diagnosa</td>
 			<td class="isian-formulir"><textarea rows="2" cols="40" name="diagnosa" class="isian-formulir isian-formulir-border" required></textarea></td>
 		</tr>
 		<tr>
 			<td class="label-formulir">Terapi</td>
-			<td class="isian-formulir"><textarea rows="2" cols="40" name="terapi" class="isian-formulir isian-formulir-border" required></textarea></td>
+			<td class="isian-formulir"><textarea rows="2" cols="40" name="terapi" class="isian-formulir isian-formulir-border" ></textarea></td>
+		</tr>
+		<tr>
+		<td class="label-formulir">Tarif</td>
+			 <td class="isian-formulir"><textarea rows="2" cols="40" name="tarif" class="isian-formulir isian-formulir-border"></textarea></td>
 		</tr>
 		<tr>
 			<td class="label-formulir"></td>

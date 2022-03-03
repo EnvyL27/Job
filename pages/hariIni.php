@@ -4,7 +4,7 @@
 	<p id="tombol-tambah-container"><a href="index.php?p=sekarang-input" class="tombol">Tambah Data</a>
 	<!-- <a target="_blank" href="pages/cetak.php"><img src="print.png" height="50px" height="50px"></a> -->
 	<FORM CLASS="form-inline" METHOD="POST">
-	<div align="right"></form>
+	<div align="right">></form>
 	</FORM>
 	</p>
 	<table id="tabel-tampil">
@@ -44,19 +44,19 @@
 						
 			}
 			else {
-				$query = "SELECT p.id, p.id_pasien, p.tanggal, s.nm_pasien FROM tb_pengunjung p, tb_pasien s WHERE p.id_pasien = s.id_pasien AND DATE(p.tanggal) = DATE(NOW()) ORDER BY p.id DESC ";
-				$queryJml = "SELECT p.id, p.id_pasien, p.tanggal, s.nm_pasien FROM tb_pengunjung p, tb_pasien s WHERE p.id_pasien = s.id_pasien AND DATE(p.tanggal) = DATE(NOW()) ORDER BY p.id DESC";
+				$query = "SELECT p.id, p.id_pasien, p.tanggal, s.nm_pasien FROM tb_pengunjung p, tb_pasien s WHERE p.id_pasien = s.id_pasien AND DATE(p.tanggal) = DATE(NOW()) ORDER BY p.id ASC ";
+				$queryJml = "SELECT p.id, p.id_pasien, p.tanggal, s.nm_pasien FROM tb_pengunjung p, tb_pasien s WHERE p.id_pasien = s.id_pasien AND DATE(p.tanggal) = DATE(NOW()) ORDER BY p.id ASC";
 				$no = $posisi * 1;
 			}			
 		}
 		else {
-			$query = "SELECT p.id, p.id_pasien, p.tanggal, s.nm_pasien FROM tb_pengunjung p, tb_pasien s WHERE p.id_pasien = s.id_pasien AND DATE(p.tanggal) = DATE(NOW()) ORDER BY p.id DESC ";
-			$queryJml = "SELECT p.id, p.id_pasien, p.tanggal, s.nm_pasien FROM tb_pengunjung p, tb_pasien s WHERE p.id_pasien = s.id_pasien AND DATE(p.tanggal) = DATE(NOW()) ORDER BY p.id DESC";
+			$query = "SELECT p.id, p.id_pasien, p.tanggal, s.nm_pasien FROM tb_pengunjung p, tb_pasien s WHERE p.id_pasien = s.id_pasien AND DATE(p.tanggal) = DATE(NOW()) ORDER BY p.id ASC ";
+			$queryJml = "SELECT p.id, p.id_pasien, p.tanggal, s.nm_pasien FROM tb_pengunjung p, tb_pasien s WHERE p.id_pasien = s.id_pasien AND DATE(p.tanggal) = DATE(NOW()) ORDER BY p.id ASC";
 			$no = $posisi * 1;
 		}
 		
 		//$sql="SELECT * FROM tbanggota ORDER BY idanggota DESC";
-		$query = "SELECT p.id, p.id_pasien, p.tanggal, s.nm_pasien FROM tb_pengunjung p, tb_pasien s WHERE p.id_pasien = s.id_pasien AND DATE(p.tanggal) = DATE(NOW()) ORDER BY p.id DESC ";
+		$query = "SELECT p.id, p.id_pasien, p.tanggal, s.nm_pasien FROM tb_pengunjung p, tb_pasien s WHERE p.id_pasien = s.id_pasien AND DATE(p.tanggal) = DATE(NOW()) ORDER BY p.id ASC ";
 		$q_tampil_anggota = mysqli_query($db, $query);
 		if(mysqli_num_rows($q_tampil_anggota)>0)
 		{

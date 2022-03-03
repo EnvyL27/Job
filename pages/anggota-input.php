@@ -20,6 +20,10 @@
 			<td class="isian-formulir"><textarea rows="2" cols="40" name="alamat" class="isian-formulir isian-formulir-border" required></textarea></td>
 		</tr>
 		<tr>
+			<td class="label-formulir">Pekerjaan</td>
+			<td class="isian-formulir"><textarea rows="2" cols="40" name="alamat" class="isian-formulir isian-formulir-border" ></textarea></td>
+		</tr>
+		<tr>
 			<td class="label-formulir"></td>
 			<td class="isian-formulir"><input type="submit" name="simpan" value="Simpan" class="tombol"></td>
 		</tr>
