@@ -21,7 +21,7 @@
 		</tr>
 		<tr>
 			<td class="label-formulir">Pekerjaan</td>
-			<td class="isian-formulir"><textarea rows="2" cols="40" name="alamat" class="isian-formulir isian-formulir-border" ></textarea></td>
+			<td class="isian-formulir"><textarea rows="2" cols="40" name="pekerjaan" class="isian-formulir isian-formulir-border" ></textarea></td>
 		</tr>
 		<tr>
 			<td class="label-formulir"></td>
