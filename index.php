@@ -34,6 +34,7 @@ if(isset($_SESSION['sesi'])){
 			<p class="label-navigasi">| Data Master</p>
 			<ul>
 				<li><a href="index.php?p=anggota">Data Pasien</a></li>
+				<!-- <li><a href="index.php?=bulanIni">Penghasilan</a></li> -->
 				<!-- <li><a href="index.php?p=obat">Data Obat</a></li> -->
 			</ul>
 			<p class="label-navigasi">| Data Rekap</p>

@@ -40,7 +40,10 @@
 			<td class="label-formulir"></td>
 			<td><div class="tombol-opsi-container"><a href="index.php?p=hasil-periksa&id=<?php echo $r_tampil_anggota['id_pasien'];?>" class="tombol">Hasil</a></div></td>
 		</tr>
-		
+		<!-- <tr>
+			<td class="label-formulir"></td>
+			<td><div class="tombol-opsi-container"><a href="pages/PrintPage.php" class="tombol">Surat Sakit</a></div></td>
+		</tr> -->
 	</table>
 	</form>
 </div>
