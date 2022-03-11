@@ -12,7 +12,8 @@
 	<form action="proses/anggota-edit-proses.php" method="post" enctype="multipart/form-data"> 
     <div class="tombol-opsi-container"><a href="index.php?p=hasil-input&id=<?php echo $r_tampil_anggota['id_pasien'];?>" class="tombol">Tambah data</a></div><br><br>
 	<?php
-		echo "Nama Pasien: ".$r_tampil_anggota['nm_pasien'];
+		echo "Nama Pasien: ".$r_tampil_anggota['nm_pasien']."<br>";
+		echo "Alergi     : ".$r_tampil_anggota['alergi'];
 	?>
 	<br><br>
     <table width="400px" id="tabel-tampil">

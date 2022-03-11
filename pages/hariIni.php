@@ -71,7 +71,7 @@
 			<td width=140px><?php echo $r_tampil_anggota['id_pasien']; ?></td>
 			<td width=140px><?php echo $r_tampil_anggota['nm_pasien']; ?></td>
 			<td>
-				<div class="tombol-opsi-container"><a href="index.php?p=anggota-edit&id=<?php echo $r_tampil_anggota['id_pasien'];?>" class="tombol">Lihat</a></div>
+				<div class="tombol-opsi-container"><a href="index.php?p=hasil-periksa&id=<?php echo $r_tampil_anggota['id_pasien'];?>" class="tombol">Lihat</a></div>
 				
 			</td>
 		</tr>		

@@ -23,7 +23,6 @@
 			<td class="label-formulir">Tanggal Lahir</td>
 			<td class="isian-formulir"><input type="date" name="tgl_lahir" value="<?php echo $r_tampil_anggota['tgl_lahir']; ?>" class="isian-formulir isian-formulir-border"></td>
 		</tr>
-	
 		<tr>
 			<td class="label-formulir">Alamat</td>
 			<td class="isian-formulir"><textarea rows="2" cols="40" name="alamat" class="isian-formulir isian-formulir-border"><?php echo $r_tampil_anggota['alamat']; ?></textarea></td>
@@ -31,6 +30,10 @@
 		<tr>
 			<td class="label-formulir">Pekerjaan</td>
 			<td class="isian-formulir"><textarea rows="2" cols="40" name="pekerjaan" class="isian-formulir isian-formulir-border"><?php echo $r_tampil_anggota['pekerjaan']; ?></textarea></td>
+		</tr>
+		<tr>
+			<td class="label-formulir">Alergi</td>
+			<td class="isian-formulir"><textarea rows="2" cols="40" name="alergi" class="isian-formulir isian-formulir-border"><?php echo $r_tampil_anggota['alergi']; ?></textarea></td>
 		</tr>
 		<tr>
 			<td class="label-formulir"></td>
