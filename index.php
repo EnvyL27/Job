@@ -41,6 +41,7 @@ if(isset($_SESSION['sesi'])){
 			<ul>
 				<li><a href="index.php?p=sekarang">Pengunjung</a></li>
 				<li><a href="index.php?p=hariIni">Hari ini</a></li>
+				<li><a href="index.php?p=rekapTanggal">Rekap Tanggal</a></li>
 			</ul>
 			<p class="label-navigasi" style="color: white;">|</p>
 			<a href="logout.php" class="logout">Logout</a>
