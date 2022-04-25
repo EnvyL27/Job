@@ -72,7 +72,7 @@
 			<td width=140px><?php echo $r_tampil_anggota['nm_pasien']; ?></td>
 			<td>
 				<div class="tombol-opsi-container"><a href="index.php?p=hasil-periksa&id=<?php echo $r_tampil_anggota['id_pasien'];?>" class="tombol">Lihat</a></div>
-				
+				<div class="tombol-opsi-container"><a href="proses/hasil-delete.php?id=<?php echo $r_tampil_anggota['id']; ?>" onclick = "return confirm ('Apakah Anda Yakin Akan Menghapus Data Ini?')" class="tombol">Hapus</a></div>
 			</td>
 		</tr>		
 		<?php $nomor++; } 

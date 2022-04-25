@@ -1,3 +1,9 @@
+<?php
+	$link = mysqli_connect("localhost", "root", "", "dbklinik");
+	$q_tampil_anggota=mysqli_query($db,"SELECT * FROM tb_pasien ");
+	$r_tampil_anggota=mysqli_fetch_array($q_tampil_anggota);
+	$last_id = mysqli_insert_id($link);
+?>
 <div id="label-page"><h3>Input Data Pasien</h3></div>
 <div id="content">
 	<form action="proses/anggota-input-proses.php" method="post" enctype="multipart/form-data">
@@ -5,7 +11,7 @@
 	<table id="tabel-input">
 		<tr>
 			<td class="label-formulir">ID Pasien</td>
-			<td class="isian-formulir"><input type="text" name="id_pasien" class="isian-formulir isian-formulir-border" ></td>
+			<td class="isian-formulir"><textarea rows="2" cols="40" name="alergi" class="isian-formulir isian-formulir-border"><?php echo $last_id; ?></textarea></td>
 		</tr>
 		<tr>
 			<td class="label-formulir">Nama</td>

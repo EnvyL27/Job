@@ -4,7 +4,12 @@
 	$q_tampil_anggota=mysqli_query($db,"SELECT * FROM tb_pasien WHERE id_pasien='$id_anggota'");
 	$id_hasil_pasien=mysqli_query($db,"SELECT  id, id_pasien, tanggal, keluhan, hasilPeriksa, tarif,diagnosa, terapi  FROM tb_periksa WHERE id_pasien = $id_anggota");
 	$r_tampil_anggota=mysqli_fetch_array($q_tampil_anggota);
-	
+	$do = $r_tampil_anggota['tgl_lahir'];
+	$dob = strtotime($r_tampil_anggota['tgl_lahir']);
+	$dob = new DateTime($r_tampil_anggota['tgl_lahir']);
+    $today   = new DateTime('today');
+  
+    $year = $dob->diff($today)->y;
 	
 ?>
 <div id="label-page"><h3>Hasil Pemeriksaan Pasien</h3></div>
@@ -13,7 +18,10 @@
     <div class="tombol-opsi-container"><a href="index.php?p=hasil-input&id=<?php echo $r_tampil_anggota['id_pasien'];?>" class="tombol">Tambah data</a></div><br><br>
 	<?php
 		echo "Nama Pasien: ".$r_tampil_anggota['nm_pasien']."<br>";
-		echo "Alergi     : ".$r_tampil_anggota['alergi'];
+		echo "Alergi     : ".$r_tampil_anggota['alergi']."<br>";
+		echo "Umur		 : ".$year."<br>";
+		echo "Alamat     : ".$r_tampil_anggota['alamat']."<br>";
+		echo "Pekerjaan  : ".$r_tampil_anggota['pekerjaan'];
 	?>
 	<br><br>
     <table width="400px" id="tabel-tampil">
